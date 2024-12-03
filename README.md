@@ -22,12 +22,11 @@ The machine learning model used for this project is Random Forest Classifier.
 
 ### Evaluation
 
-The performance of the model was evaluated using the following metrics:
+- The model is highly effective at predicting the False class but struggles significantly with the True class, as indicated by lower precision, recall, and F1-score.
 
-- **Classification Report:** Includes precision, recall, F1-score, and support for both classes (0 and 1).
-- **ROC-AUC Score:** Measures the model’s ability to distinguish between the two classes.
+- The imbalance in class performance suggests the model is biased toward the False class, likely due to class imbalance in the dataset (5580 False vs. 716 True).
 
-The model achieved an ROC-AUC Score of 0.9357, indicating that the model is performing well in distinguishing between creditworthy and non-creditworthy individuals.
+- While the ROC-AUC score is high (0.9357), the model's utility depends on the importance of correctly identifying True cases. For tasks where identifying the True class is critical (e.g., fraud detection or medical diagnosis), this model might need further improvement. 
 
 ### Source
 
